@@ -194,7 +194,7 @@ def predict_2(team1, team2, model, label_encoder, scaler, data):
     return team1 if prediction else team2
 
 
-team1 = 'DEN'  # Replace with an actual team name from your dataset
-team2 = 'GSW'  # Replace with another actual team name from your dataset
+team1 = 'DEN'  
+team2 = 'GSW'  
 winner = predict_2(team1, team2, svm_model, label_encoder, scaler, data)
 print(f"Predicted winner for the teams between {team1} and {team2}: {winner}")
